@@ -1,0 +1,36 @@
+{
+  "name": "codesandbox-template-vite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "yarn lint:types && yarn lint:quality",
+    "lint:types": "tsc",
+    "lint:quality": "eslint --ignore-path .gitignore .",
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@cloudwalker/dom-utils": "^0.2.0",
+    "@types/eslint": "^8.21.1",
+    "@types/prettier": "^3.0.0",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^4.0.0",
+    "autoprefixer": "^10.4.13",
+    "clsx": "^2.0.0",
+    "eslint": "^8.34.0",
+    "postcss": "^8.4.21",
+    "prettier": "^3.0.2",
+    "remeda": "^1.6.1",
+    "tailwindcss": "^3.2.6",
+    "typescript": "^5.0.4",
+    "vite": "^4.1.4",
+    "zod": "^3.20.6"
+  }
+}
