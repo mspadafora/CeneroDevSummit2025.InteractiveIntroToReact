@@ -1,7 +1,7 @@
 import {getBySelector} from '@cloudwalker/dom-utils'
 import ReactDOM from 'react-dom/client'
 
-import './main.css'
+import './tailwind.css'
 
 import {App} from './App'
 
