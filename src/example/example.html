@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Steps and Calories Counter</title>
+    <style>
+      .counter {
+        margin-bottom: 1rem;
+        padding: 1rem;
+        border: 1px solid #ccc;
+        width: 200px;
+      }
+
+      .value {
+        font-size: 1.5rem;
+        margin: 0.5rem 0;
+      }
+
+      button {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="counter">
+      <h2>Step Counter</h2>
+      <p class="value" id="stepCount">0 steps</p>
+      <button onclick="incrementSteps()">Add Step</button>
+    </div>
+
+    <div class="counter">
+      <h2>Calorie Counter</h2>
+      <p class="value" id="calorieCount">0 calories</p>
+      <button onclick="incrementCalories()">Add Calorie</button>
+    </div>
+
+    <script>
+      let steps = 0
+      let calories = 0
+
+      function incrementSteps() {
+        steps++
+        document.getElementById('stepCount').textContent = `${steps} steps`
+      }
+
+      function incrementCalories() {
+        calories++
+        document.getElementById(
+          'calorieCount',
+        ).textContent = `${calories} calories`
+      }
+    </script>
+  </body>
+</html>
